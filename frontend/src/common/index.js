@@ -1,5 +1,4 @@
 
-
 const backendDomain=process.env.REACT_APP_BACKEND_URL//"http://localhost:8080"
 
 const SummaryApi={
@@ -58,33 +57,33 @@ const SummaryApi={
     },
     countAddToCartProduct:{
         url:`${backendDomain}/api/countAddToCartProduct`,
-        method:"get"
+        method:"GET"
     },
     addToCartProductView:{
         url:`${backendDomain}/api/view-cart-product`,
-        method:"get"
+        method:"GET"
     },
     updateCartProduct:{
         url:`${backendDomain}/api/update-cart-product`,
-        method:"post"
+        method:"POST"
     },
     deleteCartProduct:{
         url:`${backendDomain}/api/delete-cart-product`,
-        method:"post"
+        method:"POST"
 
     },
     searchProduct:{
         url:`${backendDomain}/api/search`,
-        method:"get"
+        method:"GET"
     },
     filterProduct:{
         url:`${backendDomain}/api/filter-product`,
-        method:"post"
+        method:"POST"
 
     },
     payment:{
         url:`${backendDomain}/api/checkout`,
-        method:'post'
+        method:'POST'
     }
 }
 

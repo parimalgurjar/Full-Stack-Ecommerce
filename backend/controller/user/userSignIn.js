@@ -35,7 +35,8 @@ async function userSignInController(req, res) { // Function definition is needed
         }
         const tokenOption={
             httpOnly:true,
-            secure:true
+            secure:true,
+            sameSite:'None'
         }
 
         const token = jwt.sign(
